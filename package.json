@@ -1,0 +1,38 @@
+{
+  "name": "womens-safety-fresh",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build:android": "eas build --platform android --profile preview",
+    "build:android:prod": "eas build --platform android --profile production",
+    "build:ios": "eas build --platform ios --profile preview",
+    "prebuild": "expo prebuild"
+  },
+  "dependencies": {
+    "expo": "~54.0.23",
+    "expo-audio": "^1.0.14",
+    "expo-av": "^16.0.7",
+    "expo-camera": "^17.0.9",
+    "expo-location": "^19.0.7",
+    "expo-secure-store": "^14.0.0",
+    "expo-sensors": "^15.0.7",
+    "expo-status-bar": "~3.0.8",
+    "firebase": "^12.6.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-web": "^0.21.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "twilio": "^5.10.5",
+    "typescript": "~5.9.2"
+  },
+  "private": true
+}

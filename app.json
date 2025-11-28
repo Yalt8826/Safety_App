@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "Women's Safety App",
+    "slug": "womens-safety-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#e74c3c"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourname.womenssafety",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs location access to send your location in emergency situations.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs location access to send your location in emergency situations.",
+        "NSCameraUsageDescription": "This app needs camera access for AR navigation and evidence recording.",
+        "NSMicrophoneUsageDescription": "This app needs microphone access for emergency detection and audio recording."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#e74c3c"
+      },
+      "package": "com.yourname.womenssafety",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "RECORD_AUDIO",
+        "CALL_PHONE",
+        "SEND_SMS",
+        "READ_PHONE_STATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Women's Safety App to use your location for emergency alerts."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Women's Safety App to access camera for AR navigation and evidence recording."
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Allow Women's Safety App to access microphone for emergency detection and audio recording."
+        }
+      ]
+    ]
+  }
+}
